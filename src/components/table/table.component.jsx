@@ -148,7 +148,13 @@ const Table = () => {
           })
         }
       </tbody>
-      <footer>My Time table for V Semester</footer>
+      <tfoot>
+        <tr>
+          <td colSpan="7">
+            My Time table for V Semester from Sep 2020 - Jan 2021
+          </td>
+        </tr>
+      </tfoot>
     </table>
   );
 };

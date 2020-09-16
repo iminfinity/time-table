@@ -5,7 +5,7 @@ import Table from "./components/table/table.component";
 import Today from "./components/today/today.component";
 
 function App() {
-  const [today, setToday] = useState(true);
+  const [today, setToday] = useState(false);
 
   const changeToday = (item) => {
     setToday(item);

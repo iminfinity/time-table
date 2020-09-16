@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./today.styles.scss";
 
-import Loading from "../../components/loading/loading.component";
+// react-table didn't solve my problem for this component so i used generic <table> instead
 const time_table = {
   monday: {
     "10am-12am": "Parallel and Distributed Systems",
@@ -57,7 +57,7 @@ const Today = () => {
 
   const todaySClass = () => {
     if (today) {
-      const data = time_table["monday"];
+      const data = time_table[today];
       const time = Object.keys(data);
       const subject = Object.values(data);
 

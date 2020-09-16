@@ -6,6 +6,8 @@ header.page-header {
   padding: 0 10px;
   background: #010101;
   color: #2cb67d;
+  font-family: "Ranchers", cursive;
+  letter-spacing: 2px;
   h1 {
     cursor: pointer;
   }
@@ -15,7 +17,7 @@ header.page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10%;
+    width: 20%;
     h2 {
       cursor: pointer;
     }
@@ -26,11 +28,14 @@ header.page-header {
   }
   @media (max-width: 800px) {
     height: 60px;
+    div {
+      width: 40%;
+    }
     h1 {
-      font-size: 34px;
+      font-size: 24px;
     }
     h2 {
-      font-size: 30px;
+      font-size: 20px;
     }
     svg {
       width: 25px;
