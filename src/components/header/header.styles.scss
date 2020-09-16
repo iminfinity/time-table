@@ -1,0 +1,18 @@
+header.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+  background: #010101;
+  color: #2cb67d;
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  svg {
+    fill: #2cb67d;
+    width: 30px;
+  }
+}
