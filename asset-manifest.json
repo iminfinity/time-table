@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/time-table/static/css/main.081ff405.chunk.css",
+    "main.js": "/time-table/static/js/main.ca17bc09.chunk.js",
+    "main.js.map": "/time-table/static/js/main.ca17bc09.chunk.js.map",
+    "runtime-main.js": "/time-table/static/js/runtime-main.2aa4aefa.js",
+    "runtime-main.js.map": "/time-table/static/js/runtime-main.2aa4aefa.js.map",
+    "static/js/2.c82cbc0d.chunk.js": "/time-table/static/js/2.c82cbc0d.chunk.js",
+    "static/js/2.c82cbc0d.chunk.js.map": "/time-table/static/js/2.c82cbc0d.chunk.js.map",
+    "index.html": "/time-table/index.html",
+    "precache-manifest.c6b2d1d526bc1ba640963e7da3558df6.js": "/time-table/precache-manifest.c6b2d1d526bc1ba640963e7da3558df6.js",
+    "service-worker.js": "/time-table/service-worker.js",
+    "static/css/main.081ff405.chunk.css.map": "/time-table/static/css/main.081ff405.chunk.css.map",
+    "static/js/2.c82cbc0d.chunk.js.LICENSE.txt": "/time-table/static/js/2.c82cbc0d.chunk.js.LICENSE.txt",
+    "static/media/github.a9f7ad3d.svg": "/time-table/static/media/github.a9f7ad3d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2aa4aefa.js",
+    "static/js/2.c82cbc0d.chunk.js",
+    "static/css/main.081ff405.chunk.css",
+    "static/js/main.ca17bc09.chunk.js"
+  ]
+}
