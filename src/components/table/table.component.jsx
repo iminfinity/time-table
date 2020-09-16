@@ -1,57 +1,66 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 import "./table.styles.scss";
 
 import { useTable } from "react-table";
 
 const Table = () => {
+  const getEmptyTd = () => {
+    document.querySelectorAll("td").forEach((td) => {
+      if (td.innerHTML === "") {
+        td.className = "empty";
+      }
+    });
+  };
+  useEffect(() => {
+    document.addEventListener("click", getEmptyTd);
+
+    return () => {
+      document.removeEventListener("click", getEmptyTd);
+    };
+  }, []);
+
   const data = useMemo(
     () => [
       {
-        time: "10",
-        monday: "Parallel & Distributed Systems",
+        time: "10am-11am",
+        monday: "Parallel and Distributed Systems",
         tuesday: "Internet and Web Technology",
         friday: "Principle of Compiler Design",
       },
       {
-        time: "11",
-        monday: [
-          "Design and Analysis of Algorithm",
-          "Parallel & Distributed Systems",
-        ],
+        time: "11am-12pm",
+        monday:
+          "Design and Analysis of Algorithm & Parallel and Distributed Systems",
         tuesday: "Internet and Web Technology",
         thrusday: "Machine Learning",
-        friday: [
-          "Design and Analysis of Algorithm",
-          "Principle of Compiler Design",
-        ],
+        friday:
+          "Design and Analysis of Algorithm & Principle of Compiler Design",
         saturday: "Data Mining And Knowledge Discovery",
       },
       {
-        time: "12",
+        time: "12pm-1pm",
         monday: "Design and Analysis of Algorithm",
         thrusday: "Machine Learning",
         friday: "Design and Analysis of Algorithm",
         saturday: "Data Mining And Knowledge Discovery",
       },
+
       {
-        time: "1",
-      },
-      {
-        time: "2",
+        time: "2pm-3pm",
         monday: "Machine Learning",
       },
       {
-        time: "3",
+        time: "3pm-4pm",
         monday: "Machine Learning",
         tuesday: "Principle of Compiler Design",
         wednesday: "Internet and Web Technology",
-        thrusday: "Parallel & Distributed System",
+        thrusday: "Parallel and Distributed System",
       },
       {
-        time: "4",
+        time: "4pm-5pm",
         tuesday: "Principle of Compiler Design",
         wednesday: "Internet and Web Technology",
-        thrusday: "Parallel & Distributed System",
+        thrusday: "Parallel and Distributed System",
       },
     ],
     []
@@ -102,7 +111,7 @@ const Table = () => {
 
   return (
     // apply the table props
-    <table {...getTableProps()}>
+    <table {...getTableProps()} className="time-table">
       <thead>
         {
           // Loop over the header rows

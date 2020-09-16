@@ -1,0 +1,51 @@
+table.time-table {
+  border-collapse: collapse;
+  text-align: center;
+  background: #16161a;
+  color: #010101;
+  margin-top: 20px;
+  thead {
+    background: #101010;
+    color: #fffffea4;
+    tr {
+      th {
+        text-transform: capitalize;
+        color: #7f5af0;
+        height: 30px;
+        &:first-child {
+          background: #101010;
+          width: 100px;
+          box-shadow: 0 0 3px 3px black;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        height: 80px;
+        color: #2cb67d;
+        border: 2px solid #101010;
+        &:hover {
+          border: unset;
+          box-shadow: 0 0 5px 2px #2cb67d;
+          transform: translateX(2px);
+          cursor: pointer;
+        }
+        &:first-child {
+          border: unset;
+          background: #101010;
+          color: #7f5af0;
+          box-shadow: unset;
+        }
+        &:empty {
+          background: #101010;
+          box-shadow: unset;
+          transform: unset;
+          cursor: default;
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ const Header = () => {
       <h1>
         Time Table of 5<sup>th</sup> Semester
       </h1>
-      <h2>Today'Class</h2>
+      <h2>Today's Class</h2>
       <Github />
     </header>
   );
