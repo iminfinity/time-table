@@ -1,0 +1,49 @@
+.today {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-collapse: collapse;
+  table {
+    width: 80%;
+    thead {
+      th {
+        font-size: 40px;
+        color: #7f5af0;
+        &:first-child {
+          width: 200px;
+        }
+      }
+    }
+    tbody {
+      td {
+        text-align: center;
+        color: #2cb67d;
+        font-size: 50px;
+
+        &:first-child {
+          color: #7f5af0;
+          font-size: 30px;
+        }
+      }
+    }
+    @media (max-width: 800px) {
+      thead {
+        th {
+          font-size: 20px;
+          &:first-child {
+            width: unset;
+          }
+        }
+      }
+      tbody {
+        td {
+          font-size: 30px;
+
+          &:first-child {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,24 +1,9 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo } from "react";
 import "./table.styles.scss";
 
 import { useTable } from "react-table";
 
 const Table = () => {
-  const getEmptyTd = () => {
-    document.querySelectorAll("td").forEach((td) => {
-      if (td.innerHTML === "") {
-        td.className = "empty";
-      }
-    });
-  };
-  useEffect(() => {
-    document.addEventListener("click", getEmptyTd);
-
-    return () => {
-      document.removeEventListener("click", getEmptyTd);
-    };
-  }, []);
-
   const data = useMemo(
     () => [
       {
@@ -163,6 +148,7 @@ const Table = () => {
           })
         }
       </tbody>
+      <footer>My Time table for V Semester</footer>
     </table>
   );
 };
