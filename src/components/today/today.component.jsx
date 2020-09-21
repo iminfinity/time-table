@@ -7,15 +7,15 @@ const time_table = {
     "10am-12am": "Parallel and Distributed Systems",
     "11am-1pm": "Design and Analysis of Algorithm",
     "2pm-4pm": "Machine Learning",
+    "4pm-6pm": "Principle of Compiler Design",
   },
   tuesday: {
     "11am-1pm": "Internet and Web Technology",
-    "3pm-5pm": "Principle of Compiler Design",
   },
   wednesday: {
     "3pm-5pm": "Internet and Web Technology",
   },
-  thrusday: {
+  thursday: {
     "11am-1pm": "Machine Learning",
     "3pm-5pm": "Parallel and Distributed System",
   },
@@ -41,7 +41,7 @@ const Today = () => {
       case 3:
         return "wednesday";
       case 4:
-        return "thrusday";
+        return "thursday";
       case 5:
         return "friday";
       case 6:
